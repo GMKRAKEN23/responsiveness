@@ -6,28 +6,37 @@
 
 body{
     background: purple;
-    min-height: 100vh;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(50%, 50%);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
 }
 
 h1{
     text-align: center;
-    display: block;
     margin: 50px 0;
 }
 
-div{
-    width: 100px;
-    height: 50px;
+.box{
+    width: 300px;
+    height: 230px;
     border: solid 2px white;
     color: white;
+    margin: 10px 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 379px) {
+    body{
+        background: red;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
     body{
         background: blue;
     }
