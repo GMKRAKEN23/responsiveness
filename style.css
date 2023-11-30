@@ -34,6 +34,11 @@ h1{
     body{
         background: red;
     }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -41,12 +46,24 @@ h1{
         background: blue;
     }
 
-    div:nth-child(2n + 1){
-        display: none;
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #small{
+        width: 66%;
+    }
+
+    #medium{
+        width: 33%;
+    }
+    #large{
+        width: 100%;
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1024px){
+@media screen and (min-width: 768px) and (max-width: 1024px){
     body{
         background: green;
     }
