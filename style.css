@@ -4,15 +4,36 @@
     padding: 0;
 }
 
+body{
+    background: purple;
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(50%, 50%);
+}
+
 h1{
     text-align: center;
     display: block;
     margin: 50px 0;
 }
 
+div{
+    width: 100px;
+    height: 50px;
+    border: solid 2px white;
+    color: white;
+}
+
 @media screen and (max-width: 480px) {
     body{
         background: blue;
+    }
+
+    div:nth-child(2n + 1){
+        display: none;
     }
 }
 
